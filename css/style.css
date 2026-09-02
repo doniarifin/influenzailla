@@ -170,6 +170,11 @@ a {
 }
 
 @media (max-width: 768px) {
+  .headline {
+    font-size: 32px;
+    font-weight: 300;
+  }
+
   .mobile-header,
   .mobile-footer {
     display: block;

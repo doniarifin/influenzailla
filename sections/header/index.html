@@ -179,6 +179,25 @@
   /* .container-header {
     background-color: #000;
   } */
+
+  @media (max-width: 768px) {
+    .text-boost {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .flex-container {
+      display: block;
+    }
+    .box-mobile {
+      grid-template-columns: 1fr;
+    }
+    .grid-hero {
+      display: block;
+    }
+    .hero-text-block {
+      padding-top: 20px;
+    }
+  }
 </style>
 
 <section class="banner">
@@ -274,7 +293,7 @@
         </div>
       </div>
       <div class="grid-hero">
-        <div class="box">
+        <div class="box box-mobile">
           <div class="line-stroke">
             <svg class="wavy mb-2" viewBox="0 0 90 12" fill="none">
               <defs>
@@ -311,11 +330,11 @@
             </div>
           </div>
         </div>
-        <div class="box">
+        <div class="box box-mobile">
           <div class="flex-container">
             <div></div>
             <div
-              class="col-lg-4 d-none d-lg-flex flex-column align-items-start justify-content-end pb-4"
+              class="d-flex col-lg-4 hero-text-block flex-column align-items-start justify-content-end pb-4"
             >
               <div class="mb-2">
                 <img src="assets/images/ico_star_1_outlined.png" alt="icon" />

@@ -177,6 +177,12 @@
   .tab-panel.active {
     display: block;
   }
+
+  @media (max-width: 768px) {
+    .ico-star {
+      display: none;
+    }
+  }
 </style>
 
 <section id="expertise" class="section-dark section-2">
@@ -231,7 +237,10 @@
         </p>
       </div>
 
-      <div class="grid-box" style="align-self: end; justify-self: start">
+      <div
+        class="grid-box ico-star"
+        style="align-self: end; justify-self: start"
+      >
         <img src="assets/images/ico_star_1_outlined.png" alt="star" />
       </div>
       <div class="grid-box box-wide">
@@ -333,6 +342,17 @@
 
       <div class="grid-box"></div>
       <div class="grid-box">
+        <div
+          class="grid-box d-md-none"
+          style="
+            align-self: end;
+            justify-self: start;
+            padding-bottom: 12px;
+            padding-top: 12px;
+          "
+        >
+          <img src="assets/images/ico_star_1_outlined.png" alt="star" />
+        </div>
         <p>
           We specialize in creating unique and innovative designs that not only
           capture the essence of your business but also help you achieve your
