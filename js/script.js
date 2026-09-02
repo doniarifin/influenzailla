@@ -49,6 +49,11 @@ function initProjectsCarousel() {
   const carouselEl = document.getElementById("projectsCarousel");
   if (!carouselEl) return;
 
+  const carousel = new bootstrap.Carousel(carouselEl, {
+    interval: false,
+    touch: true,
+  });
+
   const items = carouselEl.querySelectorAll(".carousel-item");
   const dotsContainer = document.getElementById("carouselDots");
 
@@ -60,7 +65,7 @@ function initProjectsCarousel() {
     dot.src = i === 0 ? DOT_ORANGE : DOT_GRAY;
     dot.classList.add("dot");
     dot.addEventListener("click", () => {
-      bootstrap.Carousel.getInstance(carouselEl).to(i);
+      carousel.to(i);
     });
     dotsContainer.appendChild(dot);
   });

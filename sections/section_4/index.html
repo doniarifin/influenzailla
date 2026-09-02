@@ -148,6 +148,26 @@
     height: 10px;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    .project-card {
+      padding: 24px 16px;
+      min-height: 260px;
+      /* min-height: auto !important; */
+    }
+    .project-card h5 {
+      font-size: 1.25rem;
+    }
+    .project-tag {
+      font-size: 0.75rem;
+    }
+    .project-card .small {
+      font-size: 0.75rem;
+    }
+    .carousel-pair {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <section id="what-we-do" class="section-4 section-dark section-3-body">
@@ -190,7 +210,12 @@
       <span class="accent">clients</span>
     </h2>
 
-    <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+    <div
+      id="projectsCarousel"
+      class="carousel slide"
+      data-bs-ride="false"
+      data-bs-touch="true"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="carousel-pair">

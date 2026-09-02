@@ -218,19 +218,19 @@ a {
     justify-content: flex-start !important;
   }
 
-  #projectsCarousel .carousel-inner {
+  /* #projectsCarousel .carousel-inner {
     display: flex !important;
     flex-direction: column !important;
   }
 
   #projectsCarousel .carousel-item {
     display: block !important;
-  }
+  } */
 
-  .project-card {
+  /* .project-card {
     min-height: auto !important;
     padding: 1.5rem !important;
-  }
+  } */
 
   .project-card h5 {
     font-size: 1.5rem !important;
