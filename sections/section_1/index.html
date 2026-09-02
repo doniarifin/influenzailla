@@ -169,6 +169,26 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  @media (max-width: 768px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+      padding: 32px 24px;
+      min-height: 220px;
+    }
+
+    .card-num {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .card-text {
+      max-width: 100%;
+    }
+  }
 </style>
 
 <section id="about" class="section-dark section-1">
