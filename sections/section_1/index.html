@@ -1,0 +1,260 @@
+<style>
+  .section-1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* dark sections */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .box {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  /* Top row */
+  .box-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .box-3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /* Middle */
+  .box-4 {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  /* Bottom left */
+  .box-5 {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+    justify-self: start;
+  }
+
+  .box-6 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Right column, spans 2 rows */
+  .box-7 {
+    grid-column: 3;
+    grid-row: 2 / 4;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .section-dark {
+    background: #0a0a0a;
+    position: relative;
+  }
+
+  .eyebrow {
+    color: #d8b4fe;
+    font-size: 0.8rem;
+  }
+  .body-copy {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+  }
+
+  .orb {
+    background-image: url("../assets/images/ico_01.png");
+    width: 241.19px;
+    height: 276px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .orb-sm {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .orb-card {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    background-color: #202020;
+  }
+
+  .text-orb {
+    padding-bottom: 20px;
+  }
+
+  .section-1-1 {
+    padding-bottom: 40px;
+  }
+
+  /* section-box */
+  .section-box {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #000;
+    margin-bottom: 3rem;
+  }
+
+  .feature-card {
+    padding: 60px 40px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .card-num {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 300px;
+    opacity: 0.85;
+    margin: 0;
+  }
+
+  .aurora-card-1 {
+    background-image: url("../../assets/images/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .aurora-card-2 {
+    background-image: url("../../assets/images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .aurora-card-3 {
+    background-image: url("../../assets/images/bg_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .aurora-card-4 {
+    background-image: url("../../assets/images/bg_4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<section id="about" class="section-dark section-1">
+  <div class="container py-5 px-4">
+    <div class="grid section-1-1">
+      <div class="box box-1">
+        <span class="accent small">London 2006</span>
+      </div>
+      <div class="box box-2">
+        <p class="small">
+          Our creative design bureau is based in the heart of London and
+          specializes in digital branding, website design, and influencer
+          marketing.
+        </p>
+        <p class="small">
+          We believe in the power of digital media and marketing to connect
+          businesses to their consumers and develop successful solutions that
+          align with their goals.
+        </p>
+      </div>
+      <div class="box box-3"></div>
+
+      <div class="box box-4">
+        <h1 class="section-heading">
+          <span class="accent"> We turn your digital </span>
+          <br />
+          <span class="accent"> dreams into reality </span>
+        </h1>
+      </div>
+
+      <div class="box box-5">
+        <img src="../assets/images/ico_02.png" alt="icon" />
+      </div>
+      <div class="box box-6">
+        <p>
+          Our team of experienced designers and marketing professionals work
+          closely with each client to understand their unique vision and develop
+          tailored solutions that align with their goals.
+        </p>
+        <p>
+          From designing eye-catching logos and brand identities, to building
+          custom websites that engage and convert visitors, to crafting
+          effective influencer marketing campaigns, we are dedicated to helping
+          our clients succeed in the digital space.
+        </p>
+      </div>
+
+      <div class="box box-7">
+        <div class="orb-card text-center">
+          <div class="orb"></div>
+          <div class="accent text-orb">since<br />2006</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-box">
+      <div class="feature-grid">
+        <div class="feature-card aurora-card-1">
+          <span class="card-num">01</span>
+          <p class="card-text">
+            We create unique brand identities that resonate with your target
+            audience and help you stand out in a crowded marketplace
+          </p>
+        </div>
+        <div class="feature-card aurora-card-2">
+          <span class="card-num">02</span>
+          <p class="card-text">
+            We build custom websites that are visually stunning, easy to
+            navigate, and optimized for search engines
+          </p>
+        </div>
+        <div class="feature-card aurora-card-3">
+          <span class="card-num">03</span>
+          <p class="card-text">
+            We develop influencer campaigns that help you reach a wider
+            audience, build brand awareness, and drive conversions
+          </p>
+        </div>
+        <div class="feature-card aurora-card-4">
+          <span class="card-num">04</span>
+          <p class="card-text">
+            We produce high-quality content that engages your audience, builds
+            trust, and reinforces your brand message
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

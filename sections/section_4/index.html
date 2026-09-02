@@ -1,0 +1,276 @@
+<style>
+  .container-fluid-4 {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .box {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  /* .carousel-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #000;
+    margin-bottom: 3rem;
+  } */
+
+  /* Projects carousel */
+  /* .project-card {
+    padding: 60px 40px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  } */
+  .project-card {
+    padding: 60px 40px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+  }
+  .project-tag {
+    font-size: 1rem;
+    text-transform: lowercase;
+    /* opacity: 0.8; */
+    font-weight: 500;
+    margin-bottom: auto;
+  }
+  .project-card h5 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  /* .carousel-item {
+    display: flex;
+  } */
+
+  .carousel-card-1 {
+    background-image: url("../../assets/images/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-card-2 {
+    background-image: url("../../assets/images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-card-3 {
+    background-image: url("../../assets/images/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-card-4 {
+    background-image: url("../../assets/images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-card-5 {
+    background-image: url("../../assets/images/bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-card-6 {
+    background-image: url("../../assets/images/bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #000;
+  }
+
+  .carousel-controls {
+    gap: 20px;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid #e6752e; */
+    background: transparent;
+    /* color: #e6752e; */
+    /* font-size: 18px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+
+  /* .carousel-arrow:hover {
+    background: #e6752e;
+    color: #fff;
+  } */
+
+  .carousel-indicators-custom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<section id="what-we-do" class="section-4 section-dark section-3-body">
+  <div class="container py-5 px-4">
+    <div class="container-fluid-4">
+      <div class="grid-4">
+        <div class="box">
+          <img src="../../assets/images/ico_02.png" alt="star" />
+        </div>
+        <div class="box">
+          <p class="body-copy small">
+            Our team of talented designers and marketers works closely with each
+            of our clients, taking the time to understand their unique needs and
+            goals, and developing customized solutions that exceed their
+            expectations.
+          </p>
+          <p class="body-copy small">
+            We take pride in our ability to create a cohesive brand identity,
+            effective marketing strategies, and user-friendly websites and
+            applications that help our clients achieve success.
+          </p>
+        </div>
+        <div class="box">
+          <p class="body-copy small">
+            If you're a start-up looking to make a strong brand identity, or an
+            established business looking to revamp your marketing strategy, we
+            have the expertise and experience to help you succeed.
+          </p>
+          <p class="body-copy small">
+            Contact us today to learn more about our services and how we can
+            help your business grow. We look forward to hearing from you and
+            discussing your marketing needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-heading mb-4">
+      <span class="accent">Projects for our</span><br />
+      <span class="accent">clients</span>
+    </h2>
+
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-pair">
+            <div class="project-card carousel-card-1">
+              <span class="project-tag accent">Identity</span>
+              <h5>Food store identity</h5>
+              <p class="small mb-0">
+                We worked with a local health food store to create a fresh,
+                modern, and friendly brand identity.
+              </p>
+            </div>
+            <div class="project-card carousel-card-2">
+              <span class="project-tag accent">Web Design</span>
+              <h5>Technology startup site</h5>
+              <p class="small mb-0">
+                We partnered with a technology startup to create a sleek website
+                that showcased their innovative products.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-pair">
+            <div class="project-card carousel-card-3">
+              <span class="project-tag accent">Marketing</span>
+              <h5>Fashion instagram marketing</h5>
+              <p class="small mb-0">
+                Our team helped a new fashion brand grow their Instagram
+                following by over 200% in just three months.
+              </p>
+            </div>
+            <div class="project-card carousel-card-4">
+              <span class="project-tag accent">Development</span>
+              <h5>Mobile and desktop services</h5>
+              <p class="small mb-0">
+                Developing modern websites that are optimized for both desktop
+                and mobile devices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-pair">
+            <div class="project-card carousel-card-5">
+              <span class="project-tag accent">Branding</span>
+              <h5>Eco packaging design</h5>
+              <p class="small mb-0">
+                We created marketing materials that were consistent with brand
+                identity, such as business cards, brochures, and social media
+                graphics.
+              </p>
+            </div>
+            <div class="project-card carousel-card-6">
+              <span class="project-tag accent">Marketing</span>
+              <h5>Social media graphics</h5>
+              <p class="small mb-0">
+                We provided the brand with a detailed social media strategy that
+                outlined how they could continue to grow their and engage with
+                their audiences in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="carousel-controls d-flex align-items-center justify-content-center gap-3 mt-4"
+      >
+        <button
+          class="carousel-arrow"
+          type="button"
+          data-bs-target="#projectsCarousel"
+          data-bs-slide="prev"
+        >
+          <img src="../../assets/images/prev.png" alt="prev" />
+        </button>
+        <div class="carousel-indicators-custom" id="carouselDots"></div>
+        <button
+          class="carousel-arrow"
+          type="button"
+          data-bs-target="#projectsCarousel"
+          data-bs-slide="next"
+        >
+          <img src="../../assets/images/next.png" alt="next" />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

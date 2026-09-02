@@ -1,0 +1,254 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: "Inter", "Unbounded", sans-serif;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+.z-2 {
+  z-index: 2;
+}
+
+/* Hero content */
+.hero-content {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.headline {
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  font-weight: 200;
+  line-height: 1.1;
+}
+
+.section-heading {
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  font-weight: 200;
+  line-height: 1.1;
+}
+
+.accent {
+  background: linear-gradient(
+    90deg,
+    #c6f1f7 0%,
+    #f983e9 36%,
+    #b877ff 74%,
+    #c2e9cd 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.wavy {
+  width: 90px;
+  display: inline-block;
+}
+
+.wavy-path {
+  stroke: linear-gradient(
+    90deg,
+    #c6f1f7 0%,
+    #f983e9 36%,
+    #b877ff 74%,
+    #c2e9cd 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.star-icon {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.branding-table {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.table-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.th {
+  padding: 0.9rem 1.25rem;
+  font-weight: 600;
+  color: #d8b4fe;
+}
+.th-muted {
+  color: rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.td {
+  padding: 1.25rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.td:first-child {
+  border-left: none;
+}
+
+.mobile-header {
+  border: 1px solid #fff;
+  background: #0d0d0d;
+}
+
+.mobile-header-inner {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .brand-cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    color: #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .star-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .menu-toggle-btn {
+    flex: 0 0 90px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu-item {
+    border: 1px solid #fff;
+    border-top: none;
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    background: #0d0d0d;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-header,
+  .mobile-footer {
+    display: block;
+  }
+  .banner .nav-wrap,
+  .wrapper-footer {
+    display: none;
+  }
+
+  .grid,
+  .grid-container,
+  .grid-3,
+  .grid-4,
+  .grid-hero,
+  .grid-box-3,
+  .mx-box-layout,
+  .mx-box-layout-inside {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .grid-container .grid-box,
+  .grid-box-3 .box,
+  .grid-3 .box,
+  .grid-4 .box,
+  .grid-hero .box,
+  .mx-box-layout > div,
+  .mx-box-layout-inside > div {
+    width: 100% !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    margin: 0 !important;
+  }
+
+  .mx-box,
+  .mx-box-wide,
+  .mx-box-wide-inside {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
+
+  .container-section-3 {
+    min-height: auto !important;
+    padding-bottom: 2rem !important;
+    justify-content: flex-start !important;
+  }
+
+  #projectsCarousel .carousel-inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #projectsCarousel .carousel-item {
+    display: block !important;
+  }
+
+  .project-card {
+    min-height: auto !important;
+    padding: 1.5rem !important;
+  }
+
+  .project-card h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .carousel-controls {
+    flex-wrap: wrap !important;
+  }
+
+  .carousel-indicators-custom {
+    order: 2 !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  .carousel-arrow {
+    flex: 1 !important;
+    max-width: 120px !important;
+  }
+
+  .container.py-5.px-4 {
+    padding: 2rem 1rem !important;
+  }
+
+  .orb-card {
+    margin: 0 auto;
+  }
+}

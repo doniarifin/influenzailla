@@ -1,0 +1,357 @@
+<style>
+  /* warpper header */
+  .wrapper-header {
+    display: flex;
+  }
+
+  .year-badge {
+    font-size: 2.5rem;
+    font-weight: 300;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hi-there {
+    line-height: 15px;
+  }
+
+  .logo {
+    border: 1px solid #fefefe;
+    border-right: 1px solid #ffffff00;
+    padding: 20px;
+  }
+
+  .text-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .banner {
+    background-image: url("../assets/images/bg_section.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  .cell {
+    border: 1px solid #fff;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .aurora-bg {
+    background-image: url("../assets/images/bg_section.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav-wrap {
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  .brand-cell {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .brand-cell .tagline {
+    font-size: 0.65rem;
+    line-height: 1.2;
+    font-weight: 600;
+    opacity: 0.85;
+  }
+
+  .nav-cell {
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.9rem 0.5rem;
+    color: #fff;
+  }
+
+  .nav-cell.no-bottom {
+    border-bottom: none;
+  }
+  .nav-cell:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  /* grid-hero */
+  .grid-hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .box {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .line-stroke {
+    display: inline;
+  }
+
+  /* link strip  */
+  .link-strip {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .link-strip-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px 40px;
+    font-weight: 200;
+  }
+
+  .link-strip-item {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", "Unbounded", sans-serif;
+    font-size: 22px;
+    padding-bottom: 14px;
+    flex: 1 1 200px;
+  }
+
+  .link-strip-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .link-strip-row {
+      flex-direction: column;
+    }
+
+    .link-strip-item {
+      flex: 1 1 auto;
+    }
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-boost {
+    align-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+</style>
+
+<section class="banner">
+  <!-- header -->
+  <header class="">
+    <!-- mobile header -->
+    <div class="mobile-header d-md-none">
+      <div class="mobile-header-inner">
+        <div class="brand-cell">
+          <span class="star-icon">
+            <img src="../assets/images/ico_star_1_filled.png" alt="icon" />
+          </span>
+          <div>
+            <div class="fw-bold">Influenzailla</div>
+          </div>
+        </div>
+        <button
+          class="menu-toggle-btn"
+          id="mobileHamburger"
+          aria-label="Toggle menu"
+        >
+          MENU
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="mobile-menu-item">About</a>
+        <a href="#" class="mobile-menu-item">Services</a>
+        <a href="#" class="mobile-menu-item">Cases</a>
+        <a href="#" class="mobile-menu-item">Team</a>
+        <a href="#" class="mobile-menu-item">Boost Program</a>
+        <a href="#" class="mobile-menu-item">Products</a>
+        <a href="#" class="mobile-menu-item">Book</a>
+        <a href="#" class="mobile-menu-item">Blog</a>
+        <a href="#" class="mobile-menu-item">
+          <img src="../assets/images/ico_world.png" alt="icon" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid px-3 px-md-4 pt-4 position-relative z-2">
+        <div class="row nav-wrap mx-0 g-0 d-none d-md-flex wrapper-header">
+          <div class="col-12 col-md-3 logo brand-cell">
+            <span class="star-icon">
+              <img src="../assets/images/ico_star_1_filled.png" alt="icon" />
+            </span>
+            <div class="text-header">
+              <div class="fw-bold">Influenzailla</div>
+              <div class="tagline">
+                bespoke design and<br />marketing services
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="row row-top">
+              <div class="cell">About</div>
+              <div class="cell">Services</div>
+              <div class="cell">Cases</div>
+              <div class="cell">Team</div>
+              <div class="cell">
+                <img src="../assets/images/ico_world.png" alt="icon" />
+              </div>
+            </div>
+            <div class="row row-bottom">
+              <div class="cell">Boost Program</div>
+              <div class="cell">Products</div>
+              <div class="cell">Book</div>
+              <div class="cell">Blog</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container px-3 px-md-4 position-relative z-2 hero-content">
+    <div class="hero-box w-100">
+      <div class="row w-100 gx-4 mb-4">
+        <div class="col-lg-8">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div>
+              <span class="year-badge accent">2023</span>
+            </div>
+            <div class="hi-there">
+              <span class="small accent"
+                >hi there, let's<br />get started!</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-hero">
+        <div class="box">
+          <div class="line-stroke">
+            <svg class="wavy mb-2" viewBox="0 0 90 12" fill="none">
+              <defs>
+                <linearGradient
+                  id="wavyGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#c6f1f7" />
+                  <stop offset="36%" stop-color="#f983e9" />
+                  <stop offset="74%" stop-color="#b877ff" />
+                  <stop offset="100%" stop-color="#c2e9cd" />
+                </linearGradient>
+              </defs>
+              <path
+                class="wavy-path"
+                d="M0 6 Q5 0 10 6 T20 6 T30 6 T40 6 T50 6 T60 6 T70 6 T80 6 T90 6"
+                stroke="url(#wavyGradient)"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+
+          <h1 class="headline mb-2">
+            <span class="accent">Influence your</span><br />
+          </h1>
+          <div class="flex-container">
+            <h1 class="headline mb-2 accent">audience</h1>
+            <div class="text-boost">
+              <div>boost your brand with our</div>
+              <div>marketing expertise</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="flex-container">
+            <div></div>
+            <div
+              class="col-lg-4 d-none d-lg-flex flex-column align-items-start justify-content-end pb-4"
+            >
+              <div class="mb-2">
+                <img
+                  src="../assets/images/ico_star_1_outlined.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="accent" style="max-width: 260px">
+                We believe in the power of digital media to transform businesses
+                and connect them with their audiences in meaningful ways.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="link-strip">
+    <div class="container py-5">
+      <div class="link-strip-row">
+        <a href="#about" class="link-strip-item" data-gtm-label="about_us">
+          <span class="accent">About us</span>
+        </a>
+        <a href="#expertise" class="link-strip-item" data-gtm-label="expertise">
+          <span class="accent">Expertise</span>
+        </a>
+        <a
+          href="#get-started"
+          class="link-strip-item"
+          data-gtm-label="get_started"
+        >
+          <span class="accent">Get started</span>
+        </a>
+        <a
+          href="#what-we-do"
+          class="link-strip-item"
+          data-gtm-label="what_we_do"
+        >
+          <span class="accent">What we do</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

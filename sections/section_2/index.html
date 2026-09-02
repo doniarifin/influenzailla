@@ -1,0 +1,347 @@
+<style>
+  /* tilte2 */
+  .title-2 {
+    padding-bottom: 2rem;
+  }
+
+  /* grid bottom */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .grid-container .grid-box {
+    /* width: 160px;
+    height: 80px; */
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+  }
+
+  /* Baris 1 */
+  .grid-container .grid-box:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .grid-container .grid-box:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .grid-container .grid-box:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /* Baris 2 */
+  .grid-container .grid-box:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .grid-container .grid-box:nth-child(5) {
+    /* width: 320px; */
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  /* Baris 3 */
+  .grid-container .grid-box:nth-child(6) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .grid-container .grid-box:nth-child(7) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .grid-container .grid-box:nth-child(8) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  /* box layout */
+  .mx-box-layout {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+  }
+
+  .active-text-box {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 2px;
+  }
+
+  .mx-box {
+    /* width: 120px;
+    height: 60px; */
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .mx-box-wide {
+    /* width: 360px; */
+    grid-column: 1 / 4;
+  }
+
+  /* inside box layout */
+  .mx-box-layout-inside {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
+    width: 100%;
+  }
+
+  .mx-box-inside {
+    box-sizing: border-box;
+    border: 1px solid #00000000;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .mx-box-wide-inside {
+    /* width: 360px; */
+    grid-column: 1 / 4;
+  }
+
+  p {
+    color: #e4e4e4;
+    font-size: 14px;
+  }
+
+  .icon-padding {
+    padding: 20px;
+  }
+
+  .tab-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    /* border: none; */
+    /* outline: none; */
+    background-color: transparent;
+
+    background-image: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    cursor: pointer;
+    opacity: 0.35;
+    transition: opacity 0.2s ease;
+  }
+
+  .tab-btn.active {
+    opacity: 1;
+  }
+
+  .tab-btn.active {
+    background-image: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .tab-btn:not(.active):hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+</style>
+
+<section id="expertise" class="section-dark section-2">
+  <div class="container py-5 px-4">
+    <div class="title-2">
+      <svg class="wavy my-3" viewBox="0 0 90 12" fill="none">
+        <path
+          d="M0 6 Q5 0 10 6 T20 6 T30 6 T40 6 T50 6 T60 6 T70 6 T80 6 T90 6"
+          stroke="#f472b6"
+          stroke-width="2"
+        />
+      </svg>
+      <h2 class="section-heading mb-2">
+        <span class="accent">Help our clients achieve</span><br /><span
+          class="accent"
+          >their business objectives</span
+        >
+      </h2>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-box">
+        <span class="accent small">London 2006</span>
+      </div>
+      <div class="grid-box">
+        <p class="small">
+          Influenzailla is a leading design and marketing agency that offers
+          creative solutions to businesses of all sizes. Our team of experts
+          specializes in creating unique and effective designs that help our
+          clients stand out in a crowded market.
+        </p>
+        <p>
+          Our mission is to help our clients achieve their business objectives
+          through innovative and effective design solutions. We believe that
+          great design is more than just aesthetics. It's about creating a
+          seamless user experience that engages and delights your audience.
+        </p>
+      </div>
+      <div class="grid-box">
+        <p>
+          We take pride in our ability to understand the unique needs and goals
+          of each of our clients, and to develop customized strategies that
+          deliver results. Our team of experienced professionals is dedicated to
+          providing exceptional service and support to help our clients grow and
+          succeed.
+        </p>
+        <p class="small">
+          With a wide range of services, including branding, design, and
+          marketing, we're able to help our clients achieve their goals and grow
+          their business. We look forward to hearing from you and discussing how
+          we can help your business grow.
+        </p>
+      </div>
+
+      <div class="grid-box" style="align-self: end; justify-self: start">
+        <img src="../../assets/images/ico_star_1_outlined.png" alt="star" />
+      </div>
+      <div class="grid-box box-wide">
+        <div class="mx-box-layout">
+          <button
+            class="mx-box active-text-box tab-btn active"
+            data-tab="branding"
+          >
+            Branding
+          </button>
+          <button class="mx-box active-text-box tab-btn" data-tab="design">
+            Design
+          </button>
+          <button class="mx-box active-text-box tab-btn" data-tab="marketing">
+            Marketing
+          </button>
+
+          <div class="mx-box mx-box-wide">
+            <!-- Panel: Branding -->
+            <div class="tab-panel active" data-panel="branding">
+              <div class="mx-box-layout-inside">
+                <div class="mx-box-inside mx-box-wide-inside">
+                  <img
+                    src="../../assets/images/ico_01.png"
+                    alt="icon"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    Our team of experts specializes in creating unique and
+                    effective branding designs.
+                  </p>
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    We created marketing materials that were consistent with the
+                    new brand identity, such as business cards, brochures, and
+                    social media graphics.
+                  </p>
+                </div>
+                <div class="mx-box-inside"></div>
+              </div>
+            </div>
+
+            <!-- Panel: Design -->
+            <div class="tab-panel" data-panel="design">
+              <div class="mx-box-layout-inside">
+                <div class="mx-box-inside mx-box-wide-inside">
+                  <div class="icon-padding">
+                    <img src="../../assets/images/ico_2x.png" alt="icon" />
+                  </div>
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    Innovative and effective design solutions for business of
+                    our clients
+                  </p>
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    We partnered with a technology startup to create a new
+                    website that would showcase their innovative product and
+                    attract investors.
+                  </p>
+                </div>
+                <div class="mx-box-inside"></div>
+              </div>
+            </div>
+
+            <!-- Panel: Marketing -->
+            <div class="tab-panel" data-panel="marketing">
+              <div class="mx-box-layout-inside">
+                <div class="mx-box-inside mx-box-wide-inside">
+                  <div class="icon-padding">
+                    <img src="../../assets/images/ico_3x.png" alt="icon" />
+                  </div>
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    Our team of experienced designers and marketing
+                    professionals work closely
+                  </p>
+                </div>
+                <div class="mx-box-inside">
+                  <p class="small mb-0">
+                    We provided the brand with a detailed social media strategy
+                    that outlined how they could continue to grow their
+                    following and engage with their audience in the future.
+                  </p>
+                </div>
+                <div class="mx-box-inside"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-box"></div>
+      <div class="grid-box">
+        <p>
+          We specialize in creating unique and innovative designs that not only
+          capture the essence of your business but also help you achieve your
+          goals. We believe that great design is about creating a seamless user
+          experience that engages and delights your audience, and we work hard
+          to ensure that every design we create meets this high standard.
+        </p>
+      </div>
+      <div class="grid-box"></div>
+    </div>
+  </div>
+</section>
