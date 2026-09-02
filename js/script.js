@@ -6,8 +6,8 @@ $(function () {
   });
 
   //footer
-  $(document).on("click", ".menu-toggle-btn", function () {
-    const menu = $(this).closest(".mobile-footer-inner").next(".mobile-menu");
+  $(document).on("click", ".menu-toggle-btn-footer", function () {
+    const menu = $(this).closest(".mobile-footer").find(".mobile-menu");
     menu.toggleClass("open");
     $(this).text(menu.hasClass("open") ? "Close" : "MENU");
   });
